@@ -1,9 +1,14 @@
 <?php
 
-class SomeController extends \Library\Http\Controller
+namespace App\Http\Controllers;
+
+use Library\Http\Controller;
+use Library\Http\Response;
+
+class SomeController extends Controller
 {
     public function test()
     {
-        return new \Library\Http\Response(\Library\Http\Response::STATUS_OK, 'lala');
+        return new Response(Response::STATUS_OK, 'lala');
     }
 }
