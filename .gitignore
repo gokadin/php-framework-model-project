@@ -1,1 +1,6 @@
-.idea/
+/vendor
+/node_modules
+/.idea/
+composer.phar
+composer.lock
+Thumbs.db
