@@ -3,7 +3,7 @@
 require __DIR__.'/vendor/autoload.php';
 
 use Symfony\Component\Console\Application;
-use Library\Isc\Console\Modules\IscClientRunner;
+use Library\IscClient\Console\Modules\IscClientRunner;
 
 $app = new Application();
 
