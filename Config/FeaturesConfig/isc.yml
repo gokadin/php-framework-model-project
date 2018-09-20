@@ -1,3 +1,1 @@
-events:
-  topic1:
-    - someHappened
+isc_root: App/Isc
