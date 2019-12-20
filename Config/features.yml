@@ -1,6 +1,6 @@
 validation: false
 middlewares: false
-database: false
+database: true
 engine: false
 caching: false
 authentication: false

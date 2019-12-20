@@ -1,0 +1,20 @@
+version: "3"
+
+services:
+  project-service:
+    container_name: project-service
+    build: .
+    ports:
+    - "4205:80"
+    volumes:
+    - .:/usr/src/app
+    - /usr/src/app/vendor
+    links:
+      - project-db
+
+  project-db:
+    container_name: project-db
+    image: mysql:5.7
+    environment:
+      MYSQL_DATABASE: project
+      MYSQL_ROOT_PASSWORD: f10ygs87

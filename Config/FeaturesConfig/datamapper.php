@@ -8,13 +8,14 @@ return [
 
     'mysql' => [
         'host' => getenv('DATABASE_HOST'),
-        'database' => getenv('DATABASE_NAME'),
         'username' => getenv('DATABASE_USERNAME'),
-        'password' => getenv('DATABASE_PASSWORD')
+        'password' => getenv('DATABASE_PASSWORD'),
+        'database' => getenv('DATABASE_NAME')
     ],
 
     'classes' => [
 
+        App\Models\Project::class,
     ]
 
 ];
